@@ -22,8 +22,7 @@ body {
 }
 
 .container1 {
-    float: left;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     background-color: #f0f0f0;
     margin-bottom: 10px;
@@ -44,6 +43,8 @@ body {
     padding: 10px;
     border: 1px solid #333;
     border-radius: 3px;
+    flex: 1;
+    margin-right: 10px;
 }
 
 .input-container button {
@@ -57,46 +58,17 @@ body {
 
 /* Container 2 (Right Side) */
 .container2 {
-    float: left;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     background-color: #f9f9f9; /* Specify the background color you want for container2 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-height: 400px; /* Set a maximum height to enable scrolling */
     overflow: auto; /* Enable the vertical scrollbar */
-
 }
-
-
 
 h1 {
     color: #333;
     text-align: center;
-}
-
-.input-container {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 3px;
-    margin-right: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
 table {
@@ -140,5 +112,37 @@ button.edit {
 button.delete {
     background-color: #f44336;
     color: #fff;
+}
+
+/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .original {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .input-container button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .original {
+        height: auto; /* Increase the height of the box */
+    }
 }
 

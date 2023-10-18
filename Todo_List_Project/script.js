@@ -98,7 +98,7 @@ function loadTasks() {
 
         const editButton = document.createElement("button");
         editButton.classList.add("edit");
-        editButton.textContent = "Edit";
+        editButton.textContent = "Done";
         editButton.addEventListener("click", () => {
             toggleCompleted(newRow); // Call the function to toggle completed
         });

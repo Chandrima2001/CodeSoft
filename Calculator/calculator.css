@@ -121,7 +121,7 @@ button {
 /* Add this to your existing CSS */
 .calculator-heading {
     font-size: 40px;
-    color: #fff;
+    color: #fff; /* Text color for the heading */
     margin: 0;
     padding: 20px 0;
     text-align: center;
@@ -134,5 +134,14 @@ button {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: skew(-10deg);
 }
+
+/* Add responsiveness for smaller screens for the heading */
+@media (max-width: 768px) {
+    .calculator-heading {
+        font-size: 28px; /* Reduce font size for smaller screens */
+    }
+}
+
+
 
 

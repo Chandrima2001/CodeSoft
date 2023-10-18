@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.calculator {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px; /* Increase the width to make the calculator box bigger */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#input {
+    font-size: 30px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.clear-button {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.equal-button {
+    background-color: #e24e3e;
+}
+
+#history {
+    font-size: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: none;
+    height: 100px;
+    overflow-y: auto;
+}
+
+#history-button {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+#clear-button {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(209, 46, 46);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.button_delete:hover {
+    background-color: #2980b9;
+}
+
+/* Add additional styling for the calculator screen appearance */
+.calculator {
+    position: relative;
+}
+
+#input {
+    position: relative;
+    z-index: 2;
+}
+
+/* Add this to your existing CSS */
+.calculator-heading {
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(45deg, #FF7F50, #F08080, #FF4500, #DC143C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skew(-10deg);
+}
+
+

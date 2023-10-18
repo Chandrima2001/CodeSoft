@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.original {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+    padding: 30px;
+    background: linear-gradient(45deg, #7883e0, #9f64dd); /* Linear gradient background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.container1 h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Container 2 (Right Side) */
+.container2 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background-color: #f9f9f9; /* Specify the background color you want for container2 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-height: 400px; /* Set a maximum height to enable scrolling */
+    overflow: auto; /* Enable the vertical scrollbar */
+
+}
+
+
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+button.edit, button.delete {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: #fff;
+}
+
